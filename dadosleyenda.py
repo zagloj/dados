@@ -41,7 +41,7 @@ def comprobador(lista):
         lista_sin_criticos = list(lista_dados)
 # Según se elija repetir dieces o no
     lista_guardados = nlargest(guardados, lista_sin_criticos)
-# Se guardan los más altos normalmente    
+# Se guardan los más altos normalmente
     return lista_sin_criticos
 
 
