@@ -1,10 +1,11 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
-
-from random import *
-from heapq import *
+# Este script es para dados de leyenda,
+# con el sistema dados tirados y guardados
+from random import randrange
+from heapq import nlargest
+# importamos lo que hace falta
 es_cero = 0
-
 print "¿Dados tirados?"
 numero = input()
 print "¿Dados guardados"
@@ -15,12 +16,16 @@ contador_diez = 0
 print "¿Repetir dieces? si/no"
 opcion = raw_input()
 lista_guardados = []
+# inicializamos variables y escribimos el menú
+
 
 def comprobador(lista):
-    global lista_criticos, lista_dados, es_cero, contador_diez, lista_guardados, guardados
+    global lista_criticos, lista_dados, es_cero, contador_diez,\
+        lista_guardados, guardados
     while len(lista_dados) < numero:
         lista_dados.append(randrange(0, 10, 1))
-
+# tirar dados hasta que se alcanza el número
+# de dados a tirar
     lista_sin_criticos = []
     if opcion == "si":
         for i in lista:
@@ -34,9 +39,13 @@ def comprobador(lista):
                 lista_sin_criticos.append(es_cero)
     elif opcion == "no":
         lista_sin_criticos = list(lista_dados)
-
+# Según se elija repetir dieces o no
     lista_guardados = nlargest(guardados, lista_sin_criticos)
+# Se guardan los más altos normalmente    
     return lista_sin_criticos
 
 
-print comprobador(lista_dados), " con ", contador_diez, " dieces", " es decir: ", sum(lista_guardados) + 10 * contador_diez
+print comprobador(lista_dados), " con ", contador_diez, " dieces",\
+    " es decir: ", sum(lista_guardados) + 10 * contador_diez
+# En el resultado se muestra la lista completa de dados, por si
+# se quisieran elegir valores inferiores o bien revisar la tirada
