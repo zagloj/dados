@@ -30,7 +30,7 @@ def comprobador(lista):
                 lista_sin_criticos.append(i)
 # en el caso de que queramos diezes repetidos
 # a continuación se suman al contador de los
-# críticos
+# críticos, para luego tenerlos a parte
             if i == 0:
                 while es_cero == 0:
                     contador_diez += 1
