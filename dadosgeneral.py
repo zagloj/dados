@@ -49,7 +49,7 @@ def comprobador(lista):
             pifias += 1
 
     return lista_sin_criticos
-
+# Y este es el menú y la salida
 print "¿Dificultad?"
 difi = input()
 print "¿Dados?"
