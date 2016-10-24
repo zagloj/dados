@@ -22,7 +22,7 @@ def comprobador(lista):
         lista_dados.append(randrange(0, 10, 1))
 # número no es más que el número de dados que
 # queremos tirar, mientras no alcancemos ese número,
-# se siguen tirando dados
+# se siguen tirando dados. NADA, SOLO PARA PROBAR
     lista_sin_criticos = []
     if opcion == "si":
         for i in lista:
