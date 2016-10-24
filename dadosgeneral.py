@@ -23,6 +23,7 @@ def comprobador(lista):
 # número no es más que el número de dados que
 # queremos tirar, mientras no alcancemos ese número,
 # se siguen tirando dados. NADA, SOLO PARA PROBAR
+# y una última prueba, push desde emacs
     lista_sin_criticos = []
     if opcion == "si":
         for i in lista:
