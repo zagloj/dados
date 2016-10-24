@@ -7,6 +7,8 @@ from heapq import nlargest
 # importamos lo que hace falta
 # el nlargest es para elegir
 # los valores más altos de la lista
+# y no se por qué se empeña en que está
+# actualizado el repo
 es_cero = 0
 print "¿Dados tirados?"
 numero = input()
