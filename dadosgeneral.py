@@ -13,6 +13,7 @@ dificultades = []
 pifias = 0
 
 # lista de variables que usaremos, autoexplicativas
+# bueno, intentemos con magit
 
 
 def comprobador(lista):
